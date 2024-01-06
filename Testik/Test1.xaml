@@ -1,0 +1,13 @@
+﻿<Window x:Class="Testik.Test1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Testik"
+        mc:Ignorable="d"
+        Height="550" Width="850">
+    <Grid Background="#000F22">
+        <TextBlock Foreground="#7A9AC2" FontSize="36" Style="{StaticResource MyFont}" Margin="275,72,275,372" >Тестирования</TextBlock>
+        <Image Source="/Images/time.png" Margin="70,167,570,167" Stretch="None"/>
+    </Grid>
+</Window>
