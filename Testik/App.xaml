@@ -4,10 +4,10 @@
              xmlns:local="clr-namespace:Testik"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style x:Key="MyFont">
-            <Setter Property="TextElement.FontFamily"
-                    Value="/Fonts/#Rubik One">
-            </Setter>
-        </Style>
+        <ResourceDictionary>
+            <Style x:Key="MyFont">
+                <Setter Property="TextElement.FontFamily" Value="/Fonts/#Rubik One" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

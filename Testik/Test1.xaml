@@ -6,8 +6,25 @@
         xmlns:local="clr-namespace:Testik"
         mc:Ignorable="d"
         Height="550" Width="850">
-    <Grid Background="#000F22">
-        <TextBlock Foreground="#7A9AC2" FontSize="36" Style="{StaticResource MyFont}" Margin="275,72,275,372" >Тестирования</TextBlock>
-        <Image Source="/Images/time.png" Margin="70,167,570,167" Stretch="None"/>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#000F22" Offset="1.0" />
+                <GradientStop Color="#042456" Offset="0.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image Source="/Images/line3.png" Margin="287,-88,0,267" />
+        <Image Source="/Images/line4.png" Margin="-52,302,494,0" />
+
+        <TextBlock Foreground="#7A9AC2" FontSize="36" Style="{StaticResource MyFont}" Margin="449,123,101,321" ><Run Text="Вопрос 1"/></TextBlock>
+        <Image Source="/Images/time.png" Margin="104,161,536,173" Stretch="None"/>
+        <Grid RenderTransformOrigin="0.504,0.506">
+            <RadioButton Content="Вариант 1" Foreground="White" FontSize="16" Style="{StaticResource MyFont}" HorizontalAlignment="Left" Margin="496,218,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="Вариант 2" Foreground="White" FontSize="16" Style="{StaticResource MyFont}" HorizontalAlignment="Left" Margin="496,247,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="Вариант 3" Foreground="White" FontSize="16" Style="{StaticResource MyFont}" HorizontalAlignment="Left" Margin="496,277,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Button Content="Завершить тестирование" HorizontalAlignment="Left" Style="{StaticResource MyFont}" FontSize="20" Background="#042557" Foreground="White" Margin="413,418,0,61" Width="311" />
+        <Button Content="Вперед" HorizontalAlignment="Left" Style="{StaticResource MyFont}" FontSize="20" Background="#7A9AC2" Foreground="White" Margin="599,328,0,159" Width="150" RenderTransformOrigin="0.57,0.373" />
+        <Button Content="Назад" HorizontalAlignment="Left" Style="{StaticResource MyFont}" FontSize="20" Background="#7A9AC2" Foreground="White" Margin="394,328,0,159" Width="148" />
     </Grid>
 </Window>
